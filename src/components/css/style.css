@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:"roboto",sans-serif ;
+}
+body{
+    font-family:"roboto",sans-serif ;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://miro.medium.com/v2/resize:fit:1400/0*f3SKiRxS26DvBxnB');
+}
+
+.inputField{
+    width: 130px;
+    height: 30px;
+    border-radius: 50px;
+ margin: 10px 68px; 
+ text-align: center;
+ font-weight: bold;
+}
+ .info{
+    
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+      align-items: center;
+ }
+ .location{
+    font-size: 47px;
+    font-weight: bold;
+    color: rgb(53, 51, 51);
+ }
+ @keyframes moveX {
+    0% {
+        transform: translateX(0);
+    }
+    8% {
+        transform: translateX(8%);
+    }
+}
+
+.moving-icon {
+    animation: moveX 3s linear infinite;
+    padding-right: 5px;
+}
+.box {
+
+    background: linear-gradient(to bottom,#f3f2f1,#5a666e);
+    width: 200px;
+    height: 100px;
+    background-color: #7a9fb7; /* Set your desired background color */
+    position: relative;
+    overflow: hidden;
+    margin-top: 120px;
+    width: 270px;
+    height: 370px;
+    border-radius: 6px;
+    /* border: 2px solid rgb(18, 178, 178); */
+ 
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    
+}
+
+/* .box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent 20%, rgba(255, 255, 255, 0.8) 50%, transparent 80%);
+    top: 0;
+    left: -100%;
+    animation: waveAnimation 2s linear infinite;
+} */
+
+@keyframes waveAnimation {
+    to {
+        left: 100%;
+    }
+}
+
+.text{
+    margin-top: 15px;
+}
+.temp{
+    font-size: 24px;
+    color: #485663;
+}
+.tempmin_max{
+    font-size: 10px;
+width: 100px;
+height: 80px;
+margin-left: 31px;
+    color:  #485663;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.error{
+    font-size: 23px;
+    margin-left: 47px;
+    margin-top: 90px;
+    font-weight: bold;
+}
